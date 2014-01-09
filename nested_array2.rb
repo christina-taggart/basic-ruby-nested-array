@@ -14,11 +14,17 @@ data_table =[["Number",   "Name",        "Position",       "Points per Game"],
             ]
 
 roster = Hash.new
-i = 0
-while i <= 4
-  roster[i] = nil
-  i += 1
-end
+# i = 0
+# while i <= 4
+#   roster[i] = nil
+#   i += 1
+# end
+roster[0] = {"Number" => 12, "Name" => "Joe Schmo", "Position" => "Center", "Points per Game" => [14, 32, 7, 0, 23]}
+roster[1] = {"Number" => 9, "Name" => "Ms. Buckets", "Position" => "Point Guard", "Points per Game" => [19, 0, 11, 22, 0]}
+roster[2] = {"Number" => 31, "Name" => "Harvey Kay", "Position" => "Shooting Guard", "Points per Game" => [0, 30, 16, 0, 25]}
+roster[3] = {"Number" => 18, "Name" => "Sally Talls", "Position" => "Power Forward", "Points per Game" => [18, 29, 26, 31, 19]}
+roster[4] = {"Number" => 22, "Name" => "MK DiBoux", "Position" => "Small Forward", "Points per Game" => [11, 0, 23, 17, 0]}
+
 
 #-----SHITTIER VERSION-----
 
