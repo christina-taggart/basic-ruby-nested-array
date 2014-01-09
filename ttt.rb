@@ -8,6 +8,9 @@ letters = ["x","x","x","o","o","o"]
   tto.each do |x|
     p x
   end
+  p "_____________________________________"
 end
 
+tictactoe
+tictactoe
 tictactoe
