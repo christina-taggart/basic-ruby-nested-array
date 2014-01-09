@@ -17,10 +17,17 @@ roster = [["Number", "Name", "Position", "Points per Game"],
 # => { "Number" => 31, "Name" => "Harvey Kay",
 # "Position" => "Shooting Guard", "Points per Game" => [0, 30, 16, 0, 25] }
 
-
-roster[0].each_with_index do |stat_name, index|
-  p Hash[roster[0][index],roster[1][0]]
+def hash_roster(roster)
+  array_of_hash = []
+  (roster.length-1).times do |person|
+    row_of_hash = []
+    (roster[0].length).times do |label|
+      row_of_hash << Hash[roster[0][label],roster[person + 1][label]]
+    end
+    array_of_hash << row_of_hash
+  end
+  array_of_hash
 end
-
+hash_roster(roster).each{|i| p i}
 # roster.each do
 
